@@ -4,11 +4,12 @@ import java.util.Scanner;
 public class Main {
  public static void main(String[] args) {
  Scanner sc = new Scanner(System.in);
- int nota1, nota2, nota3, promedio;
+ int nota1, nota2, nota3;
+ double promedio;
  nota1 = leerNota(sc, 1);
  nota2 = leerNota(sc, 2);
  nota3 = leerNota(sc, 3);
- promedio = (nota1 + nota2 + nota3) / 3;
+ promedio = (nota1 + nota2 + nota3) / 3.0;
  System.out.println("El promedio es: " + promedio);
  }
  public static int leerNota(Scanner sc, int numero) {
@@ -20,4 +21,3 @@ public class Main {
  return nota;
  }
 }
-
